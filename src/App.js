@@ -1,7 +1,14 @@
-import {useState} from "react";
+import {useState,useEffect} from "react";
 
 let App=()=>{
   const [count, setCount] = useState(0);
+
+  console.log("render was called");
+  
+  useEffect(() => {
+    console.log("use Effect was called");
+  },[])
+
   return (
     <>
     <button onClick={()=>{
