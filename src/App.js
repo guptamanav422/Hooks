@@ -5,9 +5,13 @@ let App=()=>{
 
   console.log("render was called");
   
+  // useEffect(() => {
+  //   console.log("use Effect was called");
+  // },[])
+
   useEffect(() => {
-    console.log("use Effect was called");
-  },[])
+    console.log("use Effect case2 was called");
+  })
 
   return (
     <>
