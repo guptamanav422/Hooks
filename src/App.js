@@ -1,31 +1,8 @@
-import {useState,useEffect} from "react";
-
+import A from "./A"
 let App=()=>{
-  const [count, setCount] = useState(0);
-
-  console.log("render was called");
-
-  useEffect(()=>{
-    console.log("use Effect case2 was called")
-
-    return ()=>{
-      console.log("clean up function was called");
-    };
-
-  })
-
   return (
     <>
-    <button onClick={()=>{
-      setCount(count+1);
-    }}> + </button>
-
-    {count}
-
-    <button onClick={()=>{
-      setCount(count-1);
-    }}> -</button>
-
+    <A />
     </>
   );
 }
